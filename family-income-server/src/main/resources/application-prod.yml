@@ -1,0 +1,32 @@
+server:
+  port: 8091
+spring:
+  datasource:
+    password: xxxxxxxx
+    username: root
+    url: jdbc:mysql://localhost:3306/fab1_lzxr_vip?serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 30MB
+  jackson:
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+# 七牛云存储
+oss:
+  qiniu:
+    domain: xxxxxxxxxxx # 访问域名(默认使用七牛云测试域名)
+    accessKey: xxxxxxxxx # 公钥
+    secretKey: xxxxx-x-x # 私钥
+    bucketName: x-xx  #存储空间名称
+
+ypy:
+  bucketName: x-x
+  userName: x
+  password: xxxxx
+  BaseUrl: x://x.x.x/
